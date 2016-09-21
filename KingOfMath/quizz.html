@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<script  language="javascript">
+function loadscores() {
+	if(!(localStorage.getItem("Basics")===null || localStorage.getItem("Basics")==='0')){
+		document.getElementById("scoreBasics").innerHTML = localStorage.getItem("Basics");
+	}
+	if(!(localStorage.getItem("Linearty")===null || localStorage.getItem("Linearty")==='0')){
+		document.getElementById("scoreLinearity").innerHTML = localStorage.getItem("Linearty");
+	}
+	if(!(localStorage.getItem("Quadratica")===null || localStorage.getItem("Quadratica")==='0')){
+	document.getElementById("scoreQuadratica").innerHTML = localStorage.getItem("Quadratica");
+	}
+	if(!(localStorage.getItem("Multiplication")===null || localStorage.getItem("Multiplication")==='0')){
+	document.getElementById("scoreMultiplication").innerHTML = localStorage.getItem("Multiplication");
+	}
+	if(!(localStorage.getItem("Power Ranger")===null || localStorage.getItem("Power Ranger")==='0')){
+	document.getElementById("scorePower").innerHTML = localStorage.getItem("Power Ranger");
+	}
+	if(!(localStorage.getItem("Division")===null || localStorage.getItem("Division")==='0')){
+	document.getElementById("scoreDivision").innerHTML = localStorage.getItem("Division");
+	}
+	if(!(localStorage.getItem("The Mentalist")===null || localStorage.getItem("The Mentalist")==='0')){
+	document.getElementById("scoreMentalist").innerHTML = localStorage.getItem("The Mentalist");
+	}
+}
+function gamestart(t) {
+	sessionStorage.setItem("type",t);
+	
+	window.location="quizzGame.html";
+}
+
+window.addEventListener('tizenhwkey', function(e) {
+    if (e.keyName == "back") {
+    	window.location="menu.html";
+    }
+});
+</script>
+<title>KingofMath</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/stylequizz.css"/>
+</head>
+<body onload="loadscores()">
+<center>
+<div class="quizzBG">
+
+<table  width="300px">
+	<tr>
+			<td rowspan="2" width="100px"><img src="Quizz/quizzitem1.png" width="75" height="75"  onclick="gamestart('basics');"></td><th>Basics</th>
+	</tr>
+	<tr>
+		<td id="scoreBasics">no games played yet</td>
+	</tr>
+
+</table>
+
+</div>
+<div class="quizzBG" >
+	<table width="300px">
+	<tr>
+		<td rowspan="2" width="100px"><img src="Quizz/quizzitem2.png" width="75" height="75"  onclick="gamestart('linearity');"></td><th>Linearity</th>
+	</tr>
+	<tr>
+		<td  id="scoreLinearity">no games played yet</td>
+	</tr>
+
+</table>
+</div>
+<div class="quizzBG" >
+	<table width="300px">
+	<tr>
+		<td rowspan="2" width="100px"><img src="Quizz/quizzitem3.png" width="75" height="75"  onclick="gamestart('quadratica');"></td><th>Quadratica</th>
+	</tr>
+	<tr>
+		<td id="scoreQuadratica">no games played yet</td>
+	</tr>
+
+</table>
+</div>
+<div class="quizzBG" >
+	<table width="300px">
+	<tr>
+		<td rowspan="2" width="100px"><img src="Quizz/quizzitem4.png" width="75" height="75"  onclick="gamestart('multiplication');"></td><th>Multiplication</th>
+	</tr>
+	<tr>
+		<td id="scoreMultiplication">no games played yet</td>
+	</tr>
+
+</table>
+</div>
+<div class="quizzBG" >
+	<table width="300px">
+	<tr>
+		<td rowspan="2" width="100px"><img src="Quizz/quizzitem5.png" width="75" height="75"  onclick="gamestart('power');"></td><th>Power Ranger</th>
+	</tr>
+	<tr>
+		<td id="scorePower">no games played yet</td>
+	</tr>
+
+</table>
+</div>
+<div class="quizzBG" >
+<table width="300px">
+	<tr>
+		<td rowspan="2" width="100px"><img src="Quizz/quizzitem6.png" width="75" height="75"  onclick="gamestart('division');"></td><th>Division</th>
+	</tr>
+	<tr>
+		<td id="scoreDivision">no games played yet</td>
+	</tr>
+
+</table>	
+</div>
+<div class="quizzBG" >
+<table width="300px">
+	<tr>
+		<td rowspan="2" width="100px"><img src="Quizz/quizzitem7.png" width="75" height="75" onclick="gamestart('mentaliste');"></td><th>The Mentalist</th>
+	</tr>
+	<tr>
+		<td  id="scoreMentalist">no games played yet</td>
+	</tr>
+
+</table>
+</div>
+</center>
+</body>
+</html>

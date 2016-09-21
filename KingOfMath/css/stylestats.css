@@ -1,0 +1,17 @@
+body {
+    background: url("../b8.png") repeat-y;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+
+	}
+.roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:85px;
+}

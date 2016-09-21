@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<script  language="javascript">
+
+window.addEventListener('tizenhwkey', function(e) {
+    if (e.keyName == "back") {
+    	window.location="Adventure.html";
+    }
+});
+</script>
+<script src="./js/adventureGame.js"></script>
+    <title>KingofMath</title>
+	<link rel="stylesheet" type="text/css" href="./css/styleadventureGame.css"/>
+</head>
+<body onload="loadgame();">
+<br><br><br>
+<center>
+<img id="life3" src="life2.png">
+<img id="life2" src="life2.png">
+<img id="life1" src="life2.png">
+
+<br><br><br><br><br><br>
+
+<h2 id="question"> Question</h2>
+
+<br><br><br><br>
+
+<button id="choix1" onclick="checkUnser(0);"> c1</button><br><br>
+<button id="choix2" onclick="checkUnser(1);"> c2</button><br><br>
+<button id="choix3" onclick="checkUnser(2);"> c3</button><br><br>
+<button id="choix4" onclick="checkUnser(3);"> c4</button><br><br>
+</center>
+
+</body>
+</html>

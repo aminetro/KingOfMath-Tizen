@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/jQuerySinglePage" version="1.0.0" viewmodes="maximized">
+    <access origin="*" subdomains="true"/>
+    <tizen:application id="psGwJzdRKr.jQuerySinglePage" package="psGwJzdRKr" required_version="2.4"/>
+    <content src="index.html"/>
+    <tizen:content-security-policy>www.webservicex.net</tizen:content-security-policy>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="iconKingOfMath.png" height="117" width="117"/>
+    <name>KingOfMath</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="mobile"/>
+</widget>

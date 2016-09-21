@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>KingofMath</title>
+    <script language="javascript">
+    window.addEventListener('tizenhwkey', function(e) {
+        if (e.keyName == "back") {
+        	window.location="menu.html";
+        }
+    });
+    function setimage(o){
+    	var x = document.getElementById("imageTuto");
+    		
+    		if( o == '+')
+    			x.setAttribute("src", "Tutorial/tutoaddition1.png");
+    		else if( o =='-')
+    			x.setAttribute("src", "Tutorial/tutosoustraction1.png");
+    		else if( o =='*')
+    			x.setAttribute("src", "Tutorial/tutomultiplication1.png");
+    		else if( o == '/')
+    			x.setAttribute("src", "Tutorial/tutodivision1.png");
+    		
+
+    	  }
+	function nextImage() {
+		var x = document.getElementById("imageTuto");
+		var v = x.getAttribute("src");
+		  if(v == "Tutorial/tutoaddition3.png")
+			  v= "Tutorial/tutoaddition4.png" ;
+		  if(v == "Tutorial/tutoaddition2.png")
+			  v= "Tutorial/tutoaddition3.png" ;
+		  if(v == "Tutorial/tutoaddition1.png")
+			  v= "Tutorial/tutoaddition2.png" ;
+
+		  if(v == "Tutorial/tutosoustraction2.png")
+			  v= "Tutorial/tutosoustraction3.png" ;
+		  if(v == "Tutorial/tutosoustraction1.png")
+			  v= "Tutorial/tutosoustraction2.png" ;
+
+
+		  if(v == "Tutorial/tutomultiplication4.png")
+			  v= "Tutorial/tutomultiplication5.png" ;
+		  if(v == "Tutorial/tutomultiplication3.png")
+			  v= "Tutorial/tutomultiplication4.png" ;
+		  if(v == "Tutorial/tutomultiplication2.png")
+			  v= "Tutorial/tutomultiplication3.png" ;
+		  if(v == "Tutorial/tutomultiplication1.png")
+			  v= "Tutorial/tutomultiplication2.png" ;
+
+
+		  if(v == "Tutorial/tutodivision2.png")
+			  v= "Tutorial/tutodivision3.png" ;
+		  if(v == "Tutorial/tutodivision1.png")
+			  v= "Tutorial/tutodivision2.png" ;
+
+
+		  x.setAttribute("src", v);
+	}	
+
+	function previousImage() {
+		var x = document.getElementById("imageTuto");
+		var v = x.getAttribute("src");
+		  if(v == "Tutorial/tutoaddition2.png")
+			  v= "Tutorial/tutoaddition1.png" ;
+		  if(v == "Tutorial/tutoaddition3.png")
+			  v= "Tutorial/tutoaddition2.png" ;
+		  if(v == "Tutorial/tutoaddition4.png")
+			  v= "Tutorial/tutoaddition3.png" ;
+
+		  if(v == "Tutorial/tutosoustraction2.png")
+			  v= "Tutorial/tutosoustraction1.png" ;
+		  if(v == "Tutorial/tutosoustraction3.png")
+			  v= "Tutorial/tutosoustraction2.png" ;
+
+
+		  if(v == "Tutorial/tutomultiplication2.png")
+			  v= "Tutorial/tutomultiplication1.png" ;
+		  if(v == "Tutorial/tutomultiplication3.png")
+			  v= "Tutorial/tutomultiplication2.png" ;
+		  if(v == "Tutorial/tutomultiplication4.png")
+			  v= "Tutorial/tutomultiplication3.png" ;
+		  if(v == "Tutorial/tutomultiplication5.png")
+			  v= "Tutorial/tutomultiplication4.png" ;
+
+
+		  if(v == "Tutorial/tutodivision2.png")
+			  v= "Tutorial/tutodivision1.png" ;
+		  if(v == "Tutorial/tutodivision3.png")
+			  v= "Tutorial/tutodivision2.png" ;
+
+
+		  x.setAttribute("src", v);
+	}
+			
+    </script>
+	<link rel="stylesheet" type="text/css" href="./css/styletutorial.css"/>
+</head>
+<body>
+<span>
+	<img  src="Tutorial/plus.png" width="80" height="80" onclick="setimage('+');">
+ 	<img  src="Tutorial/moins.png"  width="80" height="80" onclick="setimage('-');">
+ 	<img  src="Tutorial/multiplication.png"  width="80" height="80" onclick="setimage('*');">
+ 	<img  src="Tutorial/division.png"  width="80" height="80" onclick="setimage('/');">
+</span>
+<br/><br/><br/><br/><br/>
+<div>
+	<center>
+		<img id="imageTuto" src="" width="300" height="300" >
+	</center>
+</div>
+<br/><br/><br/><br/>
+<center>
+ <input type="button" name="button" value="Previous" class="button"  onclick="previousImage();" style="width:120px;height:50px"/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" name="button" value="Next" class="button"  onclick="nextImage();" style="width:120px;height:50px"/>
+</center>
+</body>
+</html>

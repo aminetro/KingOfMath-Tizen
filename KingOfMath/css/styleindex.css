@@ -1,0 +1,53 @@
+body {
+background-image: url("../b8.png");
+margin: 30px;
+
+	}
+#logo{
+	margin: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+#text{
+	margin: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+#txt{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:70px;
+    height:65px;
+}
+
+
+.text input[type="text"] {
+	width:200px;
+	height:200px;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+.text input[type="text"]:focus,
+.text input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+.button
+            {
+            background: #f4c175;
+            cursor:pointer;
+            border: none;
+            }

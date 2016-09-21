@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<script  language="javascript">
+
+window.addEventListener('tizenhwkey', function(e) {
+    if (e.keyName == "back") {
+    	window.location="menu.html";
+    }
+});
+</script>
+
+<script src="./js/multiplayerGame.js"></script>
+    <title>KingofMath</title>
+	<link rel="stylesheet" type="text/css" href="./css/stylemultiplayer.css"/>
+</head>
+<body  onload="loadgame();">
+
+<img src="templatmultiplayer.png" style="width:360px;height:640px;"  />
+
+
+<div id="player1">
+<p id="timing1" style="position: absolute;top: 315px;right: 20px;" ></p>
+<h2 id="score1" style="position: absolute;top: 315px;left: 20px;color: white;" > score</h2>
+<h2 id="question1" style="position: absolute;top: 350px;left: 140px;" > Question</h2>
+<button id="choix11"  style="position: absolute;top: 570px;left: 60px;" onclick="checkUnser(0, 1)" > c11</button>
+<button id="choix12"  style="position: absolute;top: 570px;right: 60px;" onclick="checkUnser(1, 1)" >c12</button>
+<button id="choix13"  style="position: absolute;top: 490px;right: 20px;"  onclick="checkUnser(2, 1)" >c13</button>
+<button id="choix14"  style="position: absolute;top: 490px;left: 20px;" onclick="checkUnser(3, 1)"  >c14</button>
+
+
+</div>
+<div id="player2">
+<p id="timing2" style="position: absolute;top: 270px;left: 20px;" ></p>
+<h2 id="score2" class="player2" style="position: absolute;top: 270px;right: 20px;color: white;" > score</h2>
+<h2 id="question2" class="player2"  style="position: absolute;top: 230px;left: 140px;" > Question</h2>
+<button id="choix21"  class="player2"  style="position: absolute;top: 20px;left: 60px;"  onclick="checkUnser(0, 2)"> c21</button>
+<button id="choix22"  class="player2"  style="position: absolute;top: 20px;right: 60px;"  onclick="checkUnser(1, 2)">c22</button>
+<button id="choix23"  class="player2"  style="position: absolute;top: 90px;right: 20px;" onclick="checkUnser(2, 2)"  >c23</button>
+<button id="choix24"  class="player2"  style="position: absolute;top: 90px;left: 20px;" onclick="checkUnser(3, 2)"  >c24</button>
+
+
+</div>
+</body>
+</html>

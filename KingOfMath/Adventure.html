@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<script  language="javascript">
+function gamestart(op,deff) {
+	sessionStorage.setItem("operation",op);
+	sessionStorage.setItem("defficulite",deff);
+	
+	window.location="adventureGame.html";
+}
+window.addEventListener('tizenhwkey', function(e) {
+    if (e.keyName == "back") {
+    	window.location="menu.html";
+    }
+});
+</script>
+    <title>KingofMath</title>
+	<link rel="stylesheet" type="text/css" href="./css/styleadventure.css"/>
+</head>
+<body style="margin:0px">
+<button style="position: absolute;;top: 30px;right: 200px;background: url(images/level1.png);width:50px;height:50px" onclick="gamestart('+',1);" ></button>
+<button style="position: absolute;top: 140px;right: 230px;background: url(images/level2.png);width:50px;height:50px" onclick="gamestart('+',2);"  ></button>
+<button style="position: absolute;top: 155px;left: 230px;background: url(images/level3.png);width:50px;height:50px" onclick="gamestart('+',3);"  ></button>
+<button style="position: absolute;top: 240px;left: 280px;background: url(images/level4.png);width:50px;height:50px" onclick="gamestart('+',4);"  ></button>
+<button style="position: absolute;top: 270px;right: 180px;background: url(images/level5.png);width:50px;height:50px" onclick="gamestart('+',5);"  ></button>
+<button style="position: absolute;top: 360px;right: 260px;background: url(images/level6.png);width:50px;height:50px"  onclick="gamestart('+',6);" ></button>
+<button style="position: absolute;top: 360px;right: 100px;background: url(images/level7.png);width:50px;height:50px" onclick="gamestart('+',7);"  ></button>
+<button style="position: absolute;top: 420px;right: 10px;background: url(images/level8.png);width:50px;height:50px"  onclick="gamestart('+',8);" ></button>
+<button style="position: absolute;top: 490px;right: 90px;background: url(images/level9.png);width:50px;height:50px" onclick="gamestart('+',9);"  ></button>
+<button style="position: absolute;top: 570px;right: 140px;background: url(images/level10.png);width:50px;height:50px"  onclick="gamestart('+',10);" ></button>
+
+
+<button style="position: absolute;;top:640px;right: 100px;background: url(images/level11.png);width:50px;height:50px"  onclick="gamestart('-',1);" ></button>
+<button style="position: absolute;top: 700px;right: 280px;background: url(images/level12.png);width:50px;height:50px" onclick="gamestart('-',2);"  ></button>
+<button style="position: absolute;top: 820px;left: 80px;background: url(images/level13.png);width:50px;height:50px"  onclick="gamestart('-',3);" ></button>
+<button style="position: absolute;top: 800px;left: 220px;background: url(images/level14.png);width:50px;height:50px"  onclick="gamestart('-',4);" ></button>
+<button style="position: absolute;top: 890px;right: 50px;background: url(images/level15.png);width:50px;height:50px"  onclick="gamestart('-',5);" ></button>
+<button style="position: absolute;top: 970px;right: 140px;background: url(images/level16.png);width:50px;height:50px"  onclick="gamestart('-',6);" ></button>
+<button style="position: absolute;top: 1040px;right: 30px;background: url(images/level17.png);width:50px;height:50px"  onclick="gamestart('-',7);" ></button>
+<button style="position: absolute;top: 1120px;right: 50px;background: url(images/level18.png);width:50px;height:50px"  onclick="gamestart('-',8);" ></button>
+<button style="position: absolute;top: 1170px;right: 140px;background: url(images/level19.png);width:50px;height:50px" onclick="gamestart('-',9);"  ></button>
+<button style="position: absolute;top: 1220px;right: 250px;background: url(images/level20.png);width:50px;height:50px"  onclick="gamestart('-',10);" ></button>
+
+
+
+<button style="position: absolute;;top: 1310px;right: 200px;background: url(images/level21.png);width:50px;height:50px"  onclick="gamestart('*',1);" ></button>
+<button style="position: absolute;top: 1390px;right: 230px;background: url(images/level22.png);width:50px;height:50px" onclick="gamestart('*',2);"  ></button>
+<button style="position: absolute;top: 1415px;left: 230px;background: url(images/level23.png);width:50px;height:50px"  onclick="gamestart('*',3);" ></button>
+<button style="position: absolute;top: 1490px;left: 280px;background: url(images/level24.png);width:50px;height:50px"  onclick="gamestart('*',4);" ></button>
+<button style="position: absolute;top: 1520px;right: 180px;background: url(images/level25.png);width:50px;height:50px"  onclick="gamestart('*',5);" ></button>
+<button style="position: absolute;top: 1600px;right: 90px;background: url(images/level26.png);width:50px;height:50px"  onclick="gamestart('*',6);" ></button>
+<button style="position: absolute;top: 1650px;right: 200px;background: url(images/level27.png);width:50px;height:50px"  onclick="gamestart('*',7);" ></button>
+<button style="position: absolute;top: 1750px;right: 245px;background: url(images/level28.png);width:50px;height:50px"  onclick="gamestart('*',8);" ></button>
+<button style="position: absolute;top: 1780px;right: 140px;background: url(images/level29.png);width:50px;height:50px"  onclick="gamestart('*',9);" ></button>
+<button style="position: absolute;top: 1860px;right: 50px;background: url(images/level30.png);width:50px;height:50px" onclick="gamestart('*',10);"  ></button>
+
+
+<button style="position: absolute;;top:1940px;right: 100px;background: url(images/level31.png);width:50px;height:50px" onclick="gamestart('/',1);"  ></button>
+<button style="position: absolute;top: 2050px;right: 235px;background: url(images/level32.png);width:50px;height:50px" onclick="gamestart('/',2);"   ></button>
+<button style="position: absolute;top: 2140px;left: 180px;background: url(images/level33.png);width:50px;height:50px" onclick="gamestart('/',3);"   ></button>
+<button style="position: absolute;top: 2200px;left: 280px;background: url(images/level34.png);width:50px;height:50px" onclick="gamestart('/',4);"  ></button>
+<button style="position: absolute;top: 2320px;right: 80px;background: url(images/level35.png);width:50px;height:50px"  onclick="gamestart('/',5);"  ></button>
+<button style="position: absolute;top: 2300px;right: 200px;background: url(images/level36.png);width:50px;height:50px" onclick="gamestart('/',6);"   ></button>
+<button style="position: absolute;top: 2380px;right: 280px;background: url(images/level37.png);width:50px;height:50px" onclick="gamestart('/',7);"   ></button>
+<button style="position: absolute;top: 2450px;right: 200px;background: url(images/level38.png);width:50px;height:50px" onclick="gamestart('/',8);"   ></button>
+
+
+
+<img src="template1.jpg" style="width:360px;height:640px;"  />
+<img src="template2.jpg" style="width:360px;height:640px;"  />
+<img src="template3.jpg" style="width:360px;height:640px;"  />
+<img src="template4.jpg" style="width:360px;height:640px;"  />
+</body>
+</html>

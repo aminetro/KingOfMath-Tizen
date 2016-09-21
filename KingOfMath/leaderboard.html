@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KingofMath</title>
+	<link rel="stylesheet" type="text/css" href="./css/styleleader.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<meta charset="UTF-8">
+<script src="http://api.backendless.com/sdk/js/latest/backendless.js"></script>
+<script src="libs/backendless.js"></script>
+<script src="libs/backendless.min.js"></script>
+<script language="javascript">
+	var APPLICATION_ID = 'B94DA5C6-3109-2DC6-FFC4-8581C131AD00', SECRET_KEY = '9B7FE16B-FDDC-5816-FFA3-20C2195C4200', VERSION = 'v1'; //default application version;
+	Backendless.serverURL = "https://api.backendless.com";
+	Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
+
+	function kingofmath(args) {
+		args = args || {};
+
+		this.created = args.created || null;
+		this.name = args.name || null;
+		this.score = args.score || null;
+		this.updated = args.updated || null;
+		this.ownerId = args.ownerId || null;
+		this.objectId = args.objectId || null;
+		this.___class = "kingofmath";
+	}
+ 
+	function loadAll(){
+		var dataQuery = {};
+
+		var allNewObjects = Backendless.Persistence.of(kingofmath).find(dataQuery);
+		var passage = 0;
+		do{
+		    var permut = "FAUX"
+		    for (var i = 0; i < allNewObjects.data.length - 1; i++) {
+		        if( Number(allNewObjects.data[i].score) < Number(allNewObjects.data[i+1].score) ){
+			        var xxx=allNewObjects.data[i];
+			        allNewObjects.data[i]=allNewObjects.data[i+1];
+			        allNewObjects.data[i+1]=xxx;
+		            permut = "VRAI";
+			        }
+		    }
+		    passage ++;
+		}while(permut === "VRAI");
+		for (var i = 0; i < allNewObjects.data.length; i++) {
+			var content = document.getElementById("wrapperC");
+
+			var Scoreholder = document.createElement("div");
+
+			var ordre = document.createTextNode(" "+Number(i+1));
+			var names = document.createTextNode(" "+allNewObjects.data[i].name);
+			var scores = document.createTextNode(" "+allNewObjects.data[i].score);
+
+
+			Scoreholder.appendChild(ordre);
+			Scoreholder.appendChild(names);
+			Scoreholder.appendChild(scores);
+	  		
+ 		    content.appendChild(Scoreholder);
+
+			 
+
+
+		};
+		};
+
+	window.addEventListener('tizenhwkey', function(e) {
+		if (e.keyName == "back") {
+			window.location = "menu.html";
+		}
+	});
+</script>
+</head>
+<body onload="loadAll();">
+    <div id="photo" >
+    <img id="logo" alt="" src="./images/logo.png" width="150px" >
+    </div>
+	<div>
+		 		<div   id="wrapperC">
+		 		
+  		 		</div>
+		 	</div>
+</body>
+</html>

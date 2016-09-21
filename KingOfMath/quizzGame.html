@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<script src="./js/quizzGame.js"></script>
+<script  language="javascript">
+window.addEventListener('tizenhwkey', function(e) {
+    if (e.keyName == "back") {
+    	window.location="quizz.html";
+    }
+});
+</script>
+    <title>KingofMath</title>
+	<link rel="stylesheet" type="text/css" href="./css/stylequizzGame.css"/>
+</head>
+<body onload="loadgame();">
+<p id="score"> </p>
+<br><br><br>
+<center>
+<p id="timing"></p>
+
+<br><br><br>
+
+<h2 id="question"> Question</h2>
+
+<br><br><br><br>
+
+<button id="choix1" onclick="checkUnser(0);"> c1</button><br><br>
+<button id="choix2" onclick="checkUnser(1);"> c2</button><br><br>
+<button id="choix3" onclick="checkUnser(2);"> c3</button><br><br>
+<button id="choix4" onclick="checkUnser(3);"> c4</button><br><br>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+
+body {}
+
+.roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:85px;
+}
+#head{background-color: #E67E22;}
+#contenue{background-color: #4b4b4b;}
+#gauche{margin-top: 10px;margin-left: 8px;float:left;line-height: 45px;width: 30%}
+
+#deroit{margin-bottom: 10px;margin-right: 8px;float:right;width: 50%;}
+
+
+#menuleft{float:left; width:50%; padding:2px}
+#menuright{float:right; width:50%; padding:2px}
+
+
+#tutorial{background-color: #ffff8d;margin-top: 2px;}
+.tutorialtext{
+	border-radius: 0px;
+	background-color: #e6d335;
+    border: none;
+    color: white;
+    font-size: 20px;
+	}
+
+#quizz{background-color: #ff8a80;margin-top: 2px;}
+.quizztext{
+	border-radius: 0px;
+	background-color: #ff5252;
+    border: none;
+    color: white;
+    font-size: 20px;
+	}
+#leaderboard{background-color: #b388ff;margin-top: 2px;}
+.leaderboardext{
+	border-radius: 0px;
+	background-color: #7e57c2;
+    border: none;
+    color: white;
+    font-size: 20px;
+	}
+
+#adventure{background-color: #b9f6ca;margin-top: 2px;}
+.adventuretext{
+	border-radius: 0px;
+	background-color: #1de9b6;
+    border: none;
+    color: white;
+    font-size: 20px;
+	}
+#multiplayer{background-color: #84ffff;margin-top: 2px;}
+.multiplayertext{
+	border-radius: 0px;
+	background-color: #03a9f4;
+    border: none;
+    color: white;
+    font-size: 20px;
+	}
+#statistics{background-color: #b9f6ca;margin-top: 2px;}
+.statisticstext{
+	border-radius: 0px;
+	background-color: #1de9b6;
+    border: none;
+    color: white;
+    font-size: 20px;
+	}
+#textmenu{font:30px bold arial-black ;color:#ffffff;text-align:center;}
+
+#imgmenu{margin-top: 10px;}

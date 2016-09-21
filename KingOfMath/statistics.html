@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<script  language="javascript">
+window.addEventListener('tizenhwkey', function(e) {
+    if (e.keyName == "back") {
+    	window.location="menu.html";
+    }
+});
+
+function scoreInit() {
+
+	if(!(localStorage.getItem("avatar") === null)){
+		document.getElementById("profilePic").src = "./images/player"+localStorage.getItem("avatar")+".png";
+		
+	}else{
+		document.getElementById("profilePic").src ="profileDefault.jpg";
+	}
+	
+	
+	
+
+	
+	var score=0;var scoreAv = 0 ; var scoreQuizz = 0;
+	for (var i = 1; i < 11; i++)
+	{
+		scoreAv = Number(scoreAv) + Number(localStorage.getItem("addition"+i))+Number(localStorage.getItem("soustraction"+1))+Number(localStorage.getItem("multiplication"+1))+Number(localStorage.getItem("division"+1));
+
+	}
+
+	scoreQuizz = Number(scoreQuizz) +Number(localStorage.getItem("Basics"))+Number(localStorage.getItem("Linearty"))+Number(localStorage.getItem("Quadratica"))+Number(localStorage.getItem("Multiplication"))+Number(localStorage.getItem("Power Ranger"))+Number(localStorage.getItem("Division"))+Number(localStorage.getItem("The Mentalist"));
+
+	score = scoreQuizz+scoreAv;
+	document.getElementById("scoreQuizz").innerHTML ="Score Quizz = "+ scoreQuizz;
+	document.getElementById("scoreAv").innerHTML ="Score Adventure = "+ scoreAv;
+	document.getElementById("score").innerHTML ="Total Score = "+ score;
+
+	document.getElementById("name").innerHTML = localStorage.getItem("name")
+}
+
+</script>
+    <title>KingofMath</title>
+	<link rel="stylesheet" type="text/css" href="./css/stylestats.css"/>
+</head>
+<body onload="scoreInit();">
+<center>
+<img class="roundedImage" id="profilePic" src="profileDefault.jpg" height="50" width="70"><h1 id="name" style="color: white">Yahiaoui Amine </h1>
+
+<br> <br> <br> 
+<h2 id = "scoreQuizz">Score Quizz = 0</h2>
+<br> <br> <br> 
+<h2 id = "scoreAv">Score Adventure = 0</h2>
+<br> <br> <br> 
+<h2  id = "score">Total Score = 0</h2>
+</center>
+</body>
+</html>
